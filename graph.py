@@ -147,7 +147,7 @@ if __name__ == '__main__':
         start = next
     path.append(end)
     print(
-        f'Max dist from {start} to {end} ({calculated_serial[start, end]:.3f})'
+        f'Max dist from {path[0]} to {end} ({calculated_serial[start, end]:.3f})'
     )
     print(f'{len(path)-1} hops:', ' -> '.join(str(n) for n in path))
 
